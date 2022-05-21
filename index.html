@@ -5,30 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <header>
-      <a href="index.html">WebStudio</a>
+    <header class = "header flex">
+      <a href="index.html" class = "logo"><span class="color-logo">Web</span>Studio</a>
       <nav>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
+        <ul class="navigation  flex activ">
+          <li><a href="./index.html" class = "current">Студия</a></li>
+          <li><a href="./portfolio.html">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="contact activ flex">
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
-      <section>
+      <section class = "hero">
         <h1>Эффективные решения для вашего бизнеса</h1>
         <button type="button">Заказать услугу</button>
       </section>
-      <section>
+      <section class = "benefits">
         <h2>Наши преимущества</h2>
-        <ul>
+        <ul class = "benefits-list">
           <li>
             <h3>Внимание к деталям</h3>
             <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -51,17 +58,17 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="directions">
         <h2>Чем мы занимаемся</h2>
-        <ul>
+        <ul class = "directions-list">
           <li><img src="./images/block2-img1.jpg" alt="верстка документа" width="370" /></li>
           <li><img src="./images/block2-img2.jpg" alt="мобильные приложения" width="370" /></li>
           <li><img src="./images/block2-img3.jpg" alt="цветовая схема" width="370" /></li>
         </ul>
       </section>
-      <section>
+      <section class = "command">
         <h2>Наша команда</h2>
-        <ul>
+        <ul class = "command-list">
           <li>
             <img src="./images/block3-img1.jpg" alt="дизайнер Игорь" width="270" />
             <h3>Игорь Демьяненко</h3>
@@ -85,10 +92,10 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class = "footer">
       <p class="logo"><a href="index.html">WebStudio</a></p>
       <address>
-        <ul>
+        <ul class = "footer-list">
           <li>
             <a
               href="https://goo.gl/maps/3PV95evpAd6a5UV2A"
