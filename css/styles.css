@@ -1,19 +1,22 @@
 :root {
     --blue-color:#2196F3;
     --text-color:#212121;
-    --gray-color:#757575;
+    --grey-color:#757575;
     --white-color:#ffffff;
     --medium-font:500;
     --bold-font:700;
     --font-size-standart:16px;
     --font-size-small:14px;
     --font-capitalize:capitalize;
-    --bg-color-gray:#2F303A;
+    --bg-color-dark-grey:#2F303A;
+    --bg-color-light-grey:#E5E5E5;
+    --bg-color-grey:#F5F4FA;
+    --bg-color-blue:#2196F3;
   }
 
 body{
     color:var(--text-color);
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     width:1600px;
     margin:0 auto;
    
@@ -32,6 +35,9 @@ li{
 }
 address{
     font-style: normal;
+}
+button{
+    cursor: pointer;
 }
 a{
     text-decoration: none;
@@ -86,12 +92,12 @@ a.current {
     margin-right: 50px;
 }
 .header-contact a{
-    color:var(--gray-color);
+    color:var(--grey-color);
     font-weight: var(--medium-font);
 }
 /* Main page */
 .hero{
-    background-color: var(--bg-color-gray);
+    background-color: var(--bg-color-dark-grey);
 }
 .hero-content{
     padding:200px 0;
@@ -107,7 +113,7 @@ a.current {
     font-weight: 900;
 }
 .hero-content button{
-    background-color: var(--blue-color);
+    background-color: var(--bg-color-blue);
     font-size: var(--font-size-standart);
     line-height: 1.875;
     font-weight: 700;
@@ -117,8 +123,10 @@ a.current {
     margin-top: 30px;
     color: var(--white-color);
 }
+
 .benefits-list{
-    padding: 94px 215px;
+    padding: 94px 215px 0 215px;
+    justify-content: space-between;
 }
 .benefits-list h3{
     text-transform: uppercase;
@@ -126,19 +134,85 @@ a.current {
     font-weight: var(--bold-font);
 }
 .benefits-list p{
-    color: var(--gray-color);
+    color: var(--grey-color);
     font-size: var(--font-size-small);
     line-height: 1.71;
-    margin-top:10px;
+    margin-top: 10px;
     
 }
 .benefits-list>li{
-    margin-right: 30px;
+    width: 270px;
 }
 .benefits-list li:last-child{
     margin-right:0;
 }
+.directions{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.directions-list{
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 1270px;
+    margin: 0 auto 0 auto;
+}
+.directions-list-card{
+    display: block;
+    width: 370px;
+    margin: 0 30px 30px 0;
+   
+   
+}
+.direction-list-card:nth-child(3n){
+    margin-right: 0;
+}
 
+.directions h2,
+.command h2{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.command{
+    background-color: var(--bg-color-grey);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.command-list{
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 1270px;
+    margin: 0 auto 0 auto;
+}
+.command-list-card{
+    display: block;
+    width: 270px;
+    margin-right:30px;
+    border-radius:0 0 4px 4px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
+                0 1px 1px rgba(0, 0, 0, 0.14),
+                0 1px 3px rgba(0, 0, 0, 0.12);
+   
+}
+.command-list-card:nth-child(4n){
+    margin-right: 0;
+}
+.command-list-card-textblock{
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align: center;
+    font-size: var(--font-size-standart);
+    line-height: 1.19;
+}
+.command-list-card-textblock h3{
+    
+    font-weight: var(--medium-font);
+}
+.command-list-card-textblock p{
+    margin-top: 10px;
+    color: var(--grey-color);
+}
 /* Portfolio page */
 .portfolio-filter{
     margin: 94px 0 56px 495px;
@@ -156,18 +230,18 @@ a.current {
 }
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus{
-    background-color: var(--blue-color);
+    background-color: var(--bg-color-blue);
     color: var(--white-color);
 }
 button.current{
-    background-color: var(--blue-color);
+    background-color: var(--bg-color-blue);
     color: var(--white-color);
 }
 .portfolio-list{
     flex-wrap:wrap;
     justify-content: center;
-    width:1270px;
-    margin: 0 auto 94px auto;
+    width: 1270px;
+    margin: 0 auto 64px auto;
 }
 .portfolio-list-card{
     display: block;
@@ -190,7 +264,7 @@ button.current{
     margin-bottom: 8px;
 }
 .portfolio-list-card-textblock>p{
-    color: var(--gray-color);
+    color: var(--grey-color);
     font-size: var(--font-size-standart);
     line-height: 1.875;
 }
@@ -198,7 +272,7 @@ button.current{
 
 /* Footer */
 .footer{
-    background-color: var(--bg-color-gray);
+    background-color: var(--bg-color-dark-grey);
     padding: 60px 0 60px 215px;
    
 }
@@ -225,7 +299,11 @@ button.current{
     line-height: 1.71;
 }
 
-.footer-content-list a.gray{
+.footer-content-list a.grey{
     color:rgba(255, 255, 255, 0.6);
     margin-top: 9px;
+}
+.footer-content-list a.activ:hover,
+.footer-content-list a.activ:focus{
+    color: var(--blue-color);
 }
