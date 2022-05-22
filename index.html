@@ -15,27 +15,29 @@
   </head>
   <body>
     <header class = "header flex">
-      <a href="index.html" class = "logo"><span class="color-logo">Web</span>Studio</a>
+      <a href="index.html" class = "header-logo"><span class="header-logo-color">Web</span>Studio</a>
       <nav>
-        <ul class="navigation  flex activ">
-          <li><a href="./index.html" class = "current">Студия</a></li>
+        <ul class="header-navigation flex activ">
+          <li><a href="./index.html" class="current">Студия</a></li>
           <li><a href="./portfolio.html">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="contact activ flex">
+      <ul class="header-contact activ flex">
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <section class = "hero">
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+        <div class = "hero-content">
+          <h1>Эффективные решения для вашего бизнеса</h1>
+          <button type="button">Заказать услугу</button>
+        </div>
       </section>
       <section class = "benefits">
-        <h2>Наши преимущества</h2>
-        <ul class = "benefits-list">
+        <h2 class = "header-unvisible">Наши преимущества</h2>
+        <ul class = "benefits-list  flex">
           <li>
             <h3>Внимание к деталям</h3>
             <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -60,7 +62,7 @@
       </section>
       <section class="directions">
         <h2>Чем мы занимаемся</h2>
-        <ul class = "directions-list">
+        <ul class = "directions-list flex">
           <li><img src="./images/block2-img1.jpg" alt="верстка документа" width="370" /></li>
           <li><img src="./images/block2-img2.jpg" alt="мобильные приложения" width="370" /></li>
           <li><img src="./images/block2-img3.jpg" alt="цветовая схема" width="370" /></li>
@@ -68,7 +70,7 @@
       </section>
       <section class = "command">
         <h2>Наша команда</h2>
-        <ul class = "command-list">
+        <ul class = "command-list flex">
           <li>
             <img src="./images/block3-img1.jpg" alt="дизайнер Игорь" width="270" />
             <h3>Игорь Демьяненко</h3>
@@ -93,21 +95,23 @@
       </section>
     </main>
     <footer class = "footer">
-      <p class="logo"><a href="index.html">WebStudio</a></p>
-      <address>
-        <ul class = "footer-list">
-          <li>
-            <a
-              href="https://goo.gl/maps/3PV95evpAd6a5UV2A"
-              target="_blank"
-              rel="noopener nofollow noreferrer"
-              >г.Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class = "footer-content">
+        <a href="index.html" class = "footer-content-logo"><span class="footer-content-logo-color">Web</span>Studio</a>
+        <address>
+          <ul class = "footer-content-list">
+            <li>
+              <a
+                href="https://goo.gl/maps/3PV95evpAd6a5UV2A"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >г.Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li><a href="mailto:info@example.com" class = "gray">info@example.com</a></li>
+            <li><a href="tel:+380991111111"  class = "gray">+38 099 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

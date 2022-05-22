@@ -33,11 +33,11 @@
         <h1 class="header-unvisible">Порфолио</h1>
         <!-- Page's filter -->
         <ul class = "portfolio-filter flex activ-button">
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайты</button></li>
-          <li><button type="button">Приложения</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+          <li><button type="button" class="portfolio-filter-button current">Все</button></li>
+          <li><button type="button" class="portfolio-filter-button">Веб-сайты</button></li>
+          <li><button type="button" class="portfolio-filter-button">Приложения</button></li>
+          <li><button type="button" class="portfolio-filter-button">Дизайн</button></li>
+          <li><button type="button" class="portfolio-filter-button">Маркетинг</button></li>
         </ul>
         <ul class = "portfolio-list flex">
           <li class = "portfolio-list-card">
@@ -125,21 +125,23 @@
       </section>
     </main>
     <footer class = "footer">
-      <p class="logo"><a href="index.html">WebStudio</a></p>
-      <address>
-        <ul class = "footer-list flex">
-          <li>
-            <a
-              href="https://goo.gl/maps/3PV95evpAd6a5UV2A"
-              target="_blank"
-              rel="noopener nofollow noreferrer"
-              >г.Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class = "footer-content">
+        <a href="index.html" class = "footer-content-logo"><span class="footer-content-logo-color">Web</span>Studio</a>
+        <address>
+          <ul class = "footer-content-list">
+            <li>
+              <a
+                href="https://goo.gl/maps/3PV95evpAd6a5UV2A"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >г.Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li><a href="mailto:info@example.com" class = "gray">info@example.com</a></li>
+            <li><a href="tel:+380991111111"  class = "gray">+38 099 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
