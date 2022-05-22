@@ -43,7 +43,7 @@ a{
     text-decoration: none;
     color: var(--text-color);
 }
-.activ a:hover, .activ a:focus{
+.active a:hover, .active a:focus{
     color: var(--blue-color);
 }
 a.current {
@@ -303,7 +303,7 @@ button.current{
     color:rgba(255, 255, 255, 0.6);
     margin-top: 9px;
 }
-.footer-content-list a.activ:hover,
-.footer-content-list a.activ:focus{
+.footer-content-list a.active:hover,
+.footer-content-list a.active:focus{
     color: var(--blue-color);
 }
